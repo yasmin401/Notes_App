@@ -6,6 +6,13 @@ class NoteBottomSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(children: [SizedBox(height: 35), CustomTextField(hint: 'Title',)]);
+    return Column(
+      children: [
+        SizedBox(height: 35),
+        CustomTextField(hint: 'Title'),
+        SizedBox(height: 20),
+        CustomTextField(hint: 'Content', maxLines: 4),
+      ],
+    );
   }
 }
